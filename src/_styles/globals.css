@@ -2,10 +2,21 @@
 
 @theme {
   --color-dark-100: #0a0a0a;
-  --color-dark-200: #1A1A1A;
+  --color-dark-200: #1a1a1a;
   --color-dark-300: #262626;
   --color-dark-400: #404040;
-  --color-dark-700: #4D4D4D;
+  --color-dark-700: #4d4d4d;
+
+  --animate-button: buttonShimmer 2s linear infinite;
+
+  @keyframes buttonShimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
 }
 
 :root {

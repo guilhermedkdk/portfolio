@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { IoChevronForward, IoDocumentText } from "react-icons/io5";
+import { IoDocumentText, IoPaperPlane } from "react-icons/io5";
+
+import ShinyButton from "./ui/ShinyButton";
 
 export const Hero = () => {
   return (
@@ -13,7 +15,8 @@ export const Hero = () => {
             src="/avatar.png"
             alt="Profile"
             fill
-            className="rounded-full border-2 border-neutral-700 object-cover"
+            // className="rounded-full border-2 border-neutral-700 object-cover"
+            className="rounded-full border-2 border-neutral-700 transition-transform duration-500 hover:scale-[1.2] hover:-rotate-12"
           />
         </div>
         <div className="flex flex-col items-start">
@@ -49,12 +52,8 @@ export const Hero = () => {
           </span>
         </a>
 
-        <Link
-          href="/"
-          className="bg-dark-200 border-dark-700 flex items-center gap-2 rounded-lg border px-6 py-3 font-medium"
-        >
-          <span>Entre em contato</span>
-          <IoChevronForward size={20} />
+        <Link href="mailto:guilhermeperes.dev@gmail.com">
+          <ShinyButton icon={<IoPaperPlane />}>Entre em contato</ShinyButton>
         </Link>
       </div>
     </section>
