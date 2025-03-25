@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
-export const Navbar = ({
+export default function Navbar({
   navItems,
 }: {
   navItems: Array<{ name: string; link: string }>;
-}) => {
+}) {
   return (
     <nav className="border-dark-700 bg-dark-200 fixed inset-x-0 top-10 z-[5] mx-auto flex max-w-fit items-center justify-between gap-18 rounded-lg border px-8 py-4">
       <div className="flex space-x-8">
@@ -18,7 +18,7 @@ export const Navbar = ({
             href={navItem.link}
             className="text-white transition-opacity duration-200 hover:opacity-70"
           >
-            <span className="font-medium sm:block">{navItem.name}</span>
+            <span className="font-medium">{navItem.name}</span>
           </Link>
         ))}
       </div>
@@ -40,7 +40,7 @@ export const Navbar = ({
         <div className="h-3 w-0.5 bg-neutral-600" />
         <button className="cursor-pointer transition-opacity duration-200 hover:opacity-40">
           <Image
-            src="/brazil.svg"
+            src="/flags/brazil.svg"
             alt="Bandeira do Brasil"
             width={26}
             height={26}
@@ -50,4 +50,4 @@ export const Navbar = ({
       </div>
     </nav>
   );
-};
+}
