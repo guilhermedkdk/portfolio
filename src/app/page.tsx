@@ -1,5 +1,6 @@
 import Hero from "@/_components/Hero";
 import Navbar from "@/_components/Navbar";
+import Skills from "@/_components/Skills";
 
 const navItems = [
   { name: "Projetos", link: "#" },
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="mx-auto w-full max-w-7xl">
         <Navbar navItems={navItems} />
         <Hero />
+        <Skills />
       </div>
     </main>
   );

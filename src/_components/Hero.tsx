@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <h1 className="mb-8 text-7xl font-bold tracking-tight text-white">
+      <h1 className="mb-8 text-6xl font-bold tracking-tight text-white sm:text-7xl">
         DESENVOLVEDOR
         <br />
         FULLSTACK
