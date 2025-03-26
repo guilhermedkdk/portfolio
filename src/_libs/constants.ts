@@ -1,4 +1,4 @@
-export const techCardsItems = [
+export const skillCardsItems = [
   {
     name: "TypeScript",
     description: "JavaScript com tipagem",
@@ -53,4 +53,17 @@ export const techCardsItems = [
   //   imageUrl: "/logos/figma.svg",
   //   bgColor: "bg-[#0ACF83]/20",
   // },
+];
+
+export const portfolioProjects = [
+  {
+    id: "ignite-call",
+    heading: "Ignite Call",
+    description:
+      "Uma aplicação de agendamento de chamadas, utilizando o Google Calendar do usuário após o login como base de dados.",
+    imageUrl: "/projects/ignite-call.png",
+    techStack: ["TypeScript", "React", "TailwindCSS", "shadcn/ui"],
+    liveDemoUrl: "#",
+    sourceCodeUrl: "#",
+  },
 ];

@@ -1,6 +1,6 @@
-import { techCardsItems } from "@/_libs/constants";
+import { skillCardsItems } from "@/_libs/constants";
 
-import TechCard from "./TechCard";
+import SkillCard from "./cards/SkillCard";
 
 export default function Skills() {
   return (
@@ -16,8 +16,8 @@ export default function Skills() {
       </div>
 
       <div className="grid grid-cols-1 items-center justify-between gap-4 min-[800px]:grid-cols-2 min-[1180px]:grid-cols-4">
-        {techCardsItems.map((cardItem) => (
-          <TechCard key={cardItem.name} cardInfo={cardItem} />
+        {skillCardsItems.map((cardItem) => (
+          <SkillCard key={cardItem.name} cardInfo={cardItem} />
         ))}
       </div>
     </div>

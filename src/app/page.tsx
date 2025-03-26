@@ -1,5 +1,6 @@
 import Hero from "@/_components/Hero";
 import Navbar from "@/_components/Navbar";
+import Projects from "@/_components/Projects";
 import Skills from "@/_components/Skills";
 
 const navItems = [
@@ -15,6 +16,7 @@ export default function Home() {
         <Navbar navItems={navItems} />
         <Hero />
         <Skills />
+        <Projects />
       </div>
     </main>
   );
