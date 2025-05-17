@@ -1,18 +1,22 @@
 import Link from "next/link";
 import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 
+import { BackgroundBeams } from "@/_components/ui/BackgroundBeams";
+
 export default function Footer() {
   return (
     <div
-      className="border-dark-300 relative mt-20 mb-5 flex flex-col justify-center rounded-xl border antialiased"
+      className="border-dark-300 relative mt-20 mb-5 flex flex-col justify-center overflow-hidden rounded-xl border antialiased"
       id="contact"
     >
-      <div>
+      <BackgroundBeams className="z-0" />
+      <div className="relative z-10">
         <div className="space-y-8 p-10">
-          <h1 className="relative z-10 max-w-2xl text-5xl leading-[110%] font-bold">
-            Gostou do que viu?
+          <h1 className="relative z-10 max-w-3xl text-5xl leading-[110%] font-bold">
+            <span className="text-blue-600/80">Interessado</span> no meu
+            trabalho?
             <br />
-            Vamos coolaborar juntos!
+            Vamos <span className="text-blue-600/80">conversar</span>!
           </h1>
 
           <div className="relative z-10 flex gap-4">

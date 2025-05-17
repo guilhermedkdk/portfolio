@@ -1,3 +1,4 @@
+import Footer from "@/_components/Footer";
 import Hero from "@/_components/Hero";
 import Navbar from "@/_components/Navbar";
 import Projects from "@/_components/Projects";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
