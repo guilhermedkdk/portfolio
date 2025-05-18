@@ -57,13 +57,23 @@ export const skillCardsItems = [
 
 export const portfolioProjects = [
   {
-    id: "ignite-call",
-    heading: "Ignite Call",
+    id: "manga-stars",
+    heading: "Manga Stars",
+    description:
+      "Uma aplicação web e rede social para avaliação de mangás, com funcionalidades de login, cadastro, avaliação de mangás e comentários.",
+    imageUrl: "/projects/manga-stars.png",
+    techStack: ["TypeScript", "React", "TailwindCSS", "Next.js"],
+    liveDemoUrl: "https://manga-stars.vercel.app",
+    sourceCodeUrl: "https://github.com/guilhermedkdk/manga-stars",
+  },
+  {
+    id: "ez-call",
+    heading: "EZ Call",
     description:
       "Uma aplicação de agendamento de chamadas, utilizando o Google Calendar do usuário após o login como base de dados.",
-    imageUrl: "/projects/ignite-call.png",
+    imageUrl: "/projects/ez-call.png",
     techStack: ["TypeScript", "React", "TailwindCSS", "shadcn/ui"],
-    liveDemoUrl: "#",
-    sourceCodeUrl: "#",
+    liveDemoUrl: "https://ez-call.vercel.app",
+    sourceCodeUrl: "https://github.com/guilhermedkdk/ez-call",
   },
 ];

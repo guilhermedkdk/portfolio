@@ -16,7 +16,7 @@ export default function Projects() {
         </Link>
       </div>
 
-      <div className="mt-8 grid grid-cols-2 gap-4">
+      <div className="mt-8 grid grid-cols-1 gap-4 min-[900px]:grid-cols-2">
         {portfolioProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

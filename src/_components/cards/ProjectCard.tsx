@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
   return (
     <div className="bg-dark-200 flex h-full flex-col rounded-lg p-5">
       <Link
-        href="#"
+        href={liveDemoUrl}
         className="relative aspect-[16/9] w-full overflow-hidden rounded-lg"
       >
         <Image
