@@ -1,0 +1,93 @@
+{
+  "Meta": {
+    "title": "Guilherme Peres - Desenvolvedor Fullstack",
+    "description": "Desenvolvedor fullstack em São Paulo. Trabalho com TypeScript, Node.js, React e AWS construindo sistemas que vão a produção - de plataformas financeiras a ERPs internos.",
+    "role": "Desenvolvedor Fullstack"
+  },
+  "Common": {
+    "stackLabel": "Tecnologias"
+  },
+  "Nav": {
+    "label": "Principal",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "skipToContent": "Pular para o conteúdo",
+    "github": "Perfil no GitHub",
+    "linkedin": "Perfil no LinkedIn",
+    "switchLanguage": "Ver em inglês"
+  },
+  "Hero": {
+    "titleLine1": "DESENVOLVEDOR",
+    "titleLine2": "FULLSTACK",
+    "location": "São Paulo, SP",
+    "photoAlt": "Foto de Guilherme Peres",
+    "greetLabel": "Dizer oi",
+    "greetings": {
+      "cv": "Psst... meu CV está logo abaixo.",
+      "hello": "Oi! Que bom te ver por aqui.",
+      "project": "Tem um projeto? Bora conversar."
+    },
+    "downloadCv": "Baixar CV",
+    "contact": "Entre em contato",
+    "experienceWith": "Experiência com"
+  },
+  "About": {
+    "headline": "Sou um <hl>Desenvolvedor Fullstack</hl> focado em <hl>automação e performance</hl>",
+    "text": "Atuo do back-end ao front-end, passando por banco de dados e infraestrutura em cloud. Meu foco é IA aplicada a produtos reais, sempre com uma base sólida de arquitetura, DDD e design systems, que venho aplicando dos estudos à experiência profissional.",
+    "textShort": "Atuo do back-end ao front-end, com banco de dados e cloud. Meu foco é IA aplicada a produtos reais.",
+    "tabs": {
+      "work": "Trabalho",
+      "education": "Formação"
+    },
+    "experience": {
+      "title": "Experiência",
+      "anka-tech": {
+        "role": "Desenvolvedor Full Stack",
+        "period": "Set 2025 - Atualmente",
+        "description": "Faço parte do time que constrói plataformas para escritórios credenciados ao BTG Pactual. Entre várias entregas, criei agentes de IA que automatizam a rotina dos assessores e o motor que calcula a comissão mensal de cada um com regras configuráveis."
+      },
+      "audax-electronics": {
+        "role": "Desenvolvedor Web Full Stack Jr",
+        "period": "Out 2024 - Set 2025",
+        "description": "Desenvolvi o ERP que conecta produção, compras, logística e controladoria da empresa. Também criei o pipeline que sincroniza o TOTVS Protheus de forma automática, poupando 4 horas diárias do time de TI, e reduzi a emissão de relatórios de 30 minutos para segundos."
+      },
+      "soc": {
+        "role": "Estágio em Suporte",
+        "period": "Out 2023 - Jun 2024",
+        "description": "Prestei suporte técnico por chat e telefone aos usuários do SOC, software de Saúde e Segurança do Trabalho. Também organizei o registro e o escalonamento de chamados, o que deu mais rastreabilidade ao atendimento."
+      }
+    },
+    "education": {
+      "rocketseat": {
+        "course": "Formação Full Stack",
+        "period": "Out 2025"
+      },
+      "unisantos": {
+        "course": "Ciências da Computação",
+        "period": "Jan 2021 - Jun 2025"
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projetos",
+    "sourceCode": "Código",
+    "liveDemo": "Ver projeto",
+    "sourceCodeAria": "Código de {project} no GitHub",
+    "liveDemoAria": "Ver projeto {project}",
+    "screenshotAlt": "Telas do projeto {project}",
+    "rpgforge-ai": "Plataforma de fichas de RPG com IA, que transforma uma descrição em texto livre em uma ficha completa e pronta para jogar. Todo o conteúdo vem das regras oficiais do sistema, e um motor de regras próprio garante cada cálculo.",
+    "manga-stars": "Rede social de avaliação de mangás, com notas em estrelas e comentários da comunidade. A busca por título ou autor, os filtros por gênero e o feed de avaliações recentes ajudam o leitor a encontrar sua próxima história.",
+    "short": {
+      "rpgforge-ai": "Plataforma de fichas de RPG com IA, que transforma uma descrição em texto livre numa ficha completa e pronta para jogar.",
+      "manga-stars": "Rede social de avaliação de mangás, com notas em estrelas, comentários e busca por título, autor ou gênero."
+    }
+  },
+  "Footer": {
+    "headline": "<hl>Gostou</hl> do meu trabalho? <br></br>Vamos <hl>conversar!</hl>",
+    "copyEmail": "Copiar email",
+    "emailCopied": "Email copiado",
+    "copyFailed": "Não deu para copiar, selecione o email ao lado",
+    "rights": "© {year}"
+  }
+}

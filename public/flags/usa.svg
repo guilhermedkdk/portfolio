@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5571.43 3900" width="1000" height="700">
+  <rect width="5571.43" height="3900" fill="#b22234"/>
+  <g fill="#fff">
+    <rect y="300" width="5571.43" height="300"/>
+    <rect y="900" width="5571.43" height="300"/>
+    <rect y="1500" width="5571.43" height="300"/>
+    <rect y="2100" width="5571.43" height="300"/>
+    <rect y="2700" width="5571.43" height="300"/>
+    <rect y="3300" width="5571.43" height="300"/>
+  </g>
+  <rect width="2964" height="2100" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <g id="s5">
+      <g id="s1">
+        <polygon points="247,90 289,220 178,139 316,139 205,220"/>
+      </g>
+      <use href="#s1" x="494"/>
+      <use href="#s1" x="988"/>
+      <use href="#s1" x="1482"/>
+      <use href="#s1" x="1976"/>
+      <use href="#s1" x="2470"/>
+    </g>
+    <g id="s4">
+      <use href="#s1" x="247" y="210"/>
+      <use href="#s1" x="741" y="210"/>
+      <use href="#s1" x="1235" y="210"/>
+      <use href="#s1" x="1729" y="210"/>
+      <use href="#s1" x="2223" y="210"/>
+    </g>
+    <use href="#s5" y="420"/>
+    <use href="#s4" y="420"/>
+    <use href="#s5" y="840"/>
+    <use href="#s4" y="840"/>
+    <use href="#s5" y="1260"/>
+    <use href="#s4" y="1260"/>
+    <use href="#s5" y="1680"/>
+  </g>
+</svg>

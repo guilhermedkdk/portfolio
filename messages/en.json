@@ -1,0 +1,93 @@
+{
+  "Meta": {
+    "title": "Guilherme Peres - Fullstack Developer",
+    "description": "Fullstack developer based in São Paulo, Brazil. I work with TypeScript, Node.js, React and AWS, shipping systems to production - from financial platforms to internal ERPs.",
+    "role": "Fullstack Developer"
+  },
+  "Common": {
+    "stackLabel": "Technologies"
+  },
+  "Nav": {
+    "label": "Main",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "skipToContent": "Skip to content",
+    "github": "GitHub profile",
+    "linkedin": "LinkedIn profile",
+    "switchLanguage": "View in Portuguese"
+  },
+  "Hero": {
+    "titleLine1": "FULLSTACK",
+    "titleLine2": "DEVELOPER",
+    "location": "São Paulo, Brazil",
+    "photoAlt": "Photo of Guilherme Peres",
+    "greetLabel": "Say hi",
+    "greetings": {
+      "cv": "Psst... my CV is right below.",
+      "hello": "Hi! Glad you stopped by.",
+      "project": "Got a project? Let's talk."
+    },
+    "downloadCv": "Download CV",
+    "contact": "Get in touch",
+    "experienceWith": "Experience with"
+  },
+  "About": {
+    "headline": "I'm a <hl>Fullstack Developer</hl> focused on <hl>automation and performance</hl>",
+    "text": "I work from back end to front end, including databases and cloud infrastructure. My focus is AI applied to real products, always on a solid foundation of architecture, DDD and design systems, which I have been applying from my studies to my professional work.",
+    "textShort": "I work from back end to front end, including databases and cloud. My focus is AI applied to real products.",
+    "tabs": {
+      "work": "Work",
+      "education": "Education"
+    },
+    "experience": {
+      "title": "Experience",
+      "anka-tech": {
+        "role": "Full Stack Developer",
+        "period": "Sep 2025 - Present",
+        "description": "I'm part of the team that builds platforms for BTG Pactual accredited firms. Among many deliveries, I created AI agents that automate the advisors' daily work and the engine that calculates each advisor's monthly commission with configurable rules."
+      },
+      "audax-electronics": {
+        "role": "Junior Full Stack Web Developer",
+        "period": "Oct 2024 - Sep 2025",
+        "description": "I built the ERP that connects the company's production, purchasing, logistics and controllership. I also created the pipeline that syncs TOTVS Protheus automatically, saving the IT team 4 hours a day, and cut report generation from 30 minutes to seconds."
+      },
+      "soc": {
+        "role": "Support Intern",
+        "period": "Oct 2023 - Jun 2024",
+        "description": "I provided technical support over chat and phone to users of SOC, an occupational health and safety software. I also organized ticket logging and escalation, which made every request easier to track."
+      }
+    },
+    "education": {
+      "rocketseat": {
+        "course": "Full Stack Program",
+        "period": "Oct 2025"
+      },
+      "unisantos": {
+        "course": "Computer Science",
+        "period": "Jan 2021 - Jun 2025"
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "sourceCode": "Source code",
+    "liveDemo": "View project",
+    "sourceCodeAria": "Source code for {project} on GitHub",
+    "liveDemoAria": "View project {project}",
+    "screenshotAlt": "Screens from the {project} project",
+    "rpgforge-ai": "An AI-powered RPG character sheet platform that turns a free-text description into a complete sheet, ready to play. All content comes from the system's official rules, and a custom rules engine checks every calculation.",
+    "manga-stars": "A social network for rating manga, with star ratings and comments from the community. Search by title or author, genre filters and a feed of recent reviews help every reader find the next story to read.",
+    "short": {
+      "rpgforge-ai": "An AI-powered RPG character sheet platform that turns a free-text description into a complete sheet, ready to play.",
+      "manga-stars": "A social network for rating manga, with star ratings, comments and search by title, author or genre."
+    }
+  },
+  "Footer": {
+    "headline": "<hl>Interested</hl> in my work? <br></br>Let's <hl>talk!</hl>",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "copyFailed": "Couldn't copy, select the email next to it",
+    "rights": "© {year}"
+  }
+}

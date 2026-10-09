@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+
+  --color-dark-100: #0a0a0a;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #262626;
+  --color-dark-400: #404040;
+  --color-dark-700: #4d4d4d;
+
+  --animate-button: buttonShimmer 2s linear infinite;
+  --animate-border-shimmer: borderShimmer 4s linear infinite;
+  --animate-enter: enter 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-enter-scale: enter-scale 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fade-in 1.2s ease-out both;
+  --animate-panel-in: panel-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-typing: typing 1.2s ease-in-out infinite;
+  --animate-bubble-pop: bubble-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.4s
+    backwards;
+  --animate-bubble-text: bubble-text 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.12s
+    both;
+
+  @keyframes buttonShimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+
+  /* The light crosses in the first 2s, at the button's pace, then rests 2s
+     off the edge before the next pass. */
+  @keyframes borderShimmer {
+    0% {
+      background-position: 100% 0;
+    }
+    50%,
+    100% {
+      background-position: 0% 0;
+    }
+  }
+
+  /* Hero entrance runs on first paint instead of waiting for hydration. These
+     set `translate` and `scale`, the same properties as Tailwind's translate
+     and scale utilities, so keep them off elements that use those. */
+  @keyframes enter {
+    from {
+      opacity: 0;
+      translate: 0 40px;
+    }
+  }
+
+  @keyframes enter-scale {
+    from {
+      opacity: 0;
+      scale: 0.8;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      translate: 0 8px;
+    }
+  }
+
+  @keyframes typing {
+    0%,
+    60%,
+    100% {
+      translate: 0 0;
+      opacity: 0.35;
+    }
+    30% {
+      translate: 0 -3px;
+      opacity: 1;
+    }
+  }
+
+  /* `backwards`, not `both`: once it ends, the bubble's scale and opacity go
+     back to its utilities, which open and close it later. */
+  @keyframes bubble-pop {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+  }
+
+  @keyframes bubble-text {
+    from {
+      opacity: 0;
+      filter: blur(4px);
+    }
+  }
+}
+
+/* The avatar tilt animates these instead of `rotate`/`scale`. A transform
+   animation is handed to the compositor, which resamples the photo with a
+   cheaper filter and leaves it visibly soft until it settles; a custom property
+   interpolates on the main thread, so every frame is a full-quality paint. */
+@property --avatar-tilt {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --avatar-zoom {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+
+/* The whole design is dark-only; a light scheme would leave every surface
+   unreadable, so the UA is told not to offer one. */
+:root {
+  color-scheme: dark;
+  --background: #0a0a0a;
+  --text: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+::selection {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* One focus ring for every control. It sits in the base layer so a component
+   can still move it with an `outline-offset-*` utility. */
+@layer base {
+  :focus-visible {
+    outline-color: var(--color-blue-500);
+    outline-offset: 2px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

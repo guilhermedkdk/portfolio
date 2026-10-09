@@ -1,0 +1,107 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[margin=0.75in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedright
+
+% Section title over a full-width rule, as in the earlier versions.
+\newcommand{\cvsection}[1]{%
+  \vspace{9pt}{\large\bfseries #1}\par\vspace{-5pt}%
+  \rule{\linewidth}{0.4pt}\par\vspace{1pt}}
+
+% Organisation | role on the left, period flush right.
+\newcommand{\cvheading}[3]{\textbf{#1} $|$ #2\hfill #3\par}
+
+% Achievements are indented lines without bullets.
+\newenvironment{cvitems}
+  {\begin{itemize}[leftmargin=0.16in,label={},itemsep=1.5pt,topsep=2pt,parsep=0pt]}
+  {\end{itemize}}
+
+\newcommand{\cvstack}[2]{\vspace{2pt}\textbf{#1:} #2\par}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{25}{29}\selectfont Guilherme Peres}\par\vspace{3pt}
+  {\large Desenvolvedor Full Stack}\par\vspace{5pt}
+  Santos - São Paulo $|$
+  \href{mailto:guilhermeperes.dev@gmail.com}{guilhermeperes.dev@gmail.com} $|$
+  (13) 98862-7400\par\vspace{2pt}
+  % Full URLs stay in the text because ATS parsers often drop link annotations.
+  {\small\color{black!60}%
+  \href{https://guilhermeperes.dev/pt}{guilhermeperes.dev} $|$
+  \href{https://linkedin.com/in/guilhermeperesdev}{linkedin.com/in/guilhermeperesdev} $|$
+  \href{https://github.com/guilhermedkdk}{github.com/guilhermedkdk}}
+\end{center}
+
+\cvsection{Perfil}
+Desenvolvedor Full Stack com 2 anos de experiência em plataformas financeiras e sistemas ERP.
+Trabalho com Java e Node.js no backend, React e Angular no frontend, AWS e IA generativa
+aplicada ao negócio.
+
+\cvsection{Experiência Profissional}
+\cvheading{Anka Tech}{Desenvolvedor Full Stack}{Set 2025 - Atual}
+\textit{Software house especializada em escritórios de assessoria de investimentos.}\par
+\begin{cvitems}
+  \item Criei recursos de IA generativa com a OpenAI, como uma consulta em linguagem natural à
+        base de clientes que transforma perguntas em filtros validados, sem enviar dados
+        pessoais ao modelo.
+  \item Desenvolvi o motor de comissões mensais com regras configuráveis por assessor, eliminando
+        os erros manuais.
+  \item Construí pipelines ETL diários com a API do BTG em AWS Lambda, consolidando 3 fontes de dados.
+  \item Implementei OAuth2 com SSO e controle de acesso RBAC, isolando as informações por
+        assessor e por equipe.
+  \item Desenvolvi em Spring Boot e Angular o módulo de carteiras, em que os assessores acompanham
+        posições e rentabilidade dos clientes em tempo real, com cotações via WebSocket abaixo de 200 ms.
+\end{cvitems}
+\cvstack{Stack}{React, Next.js, Node.js, TypeScript, Java, Spring Boot, Angular, PostgreSQL, AWS}
+
+\vspace{7pt}
+\cvheading{Audax Electronics}{Desenvolvedor Web Full Stack Jr}{Out 2024 - Set 2025}
+\textit{Indústria que projeta e fabrica soluções em LED sob medida para grandes marcas.}\par
+\begin{cvitems}
+  \item Desenvolvi o ERP interno da empresa, com 10 módulos em microsserviços (produção,
+        compras, logística, controladoria, qualidade e CRM).
+  \item Criei o pipeline que sincroniza 25 tabelas do TOTVS Protheus com fila e agendamento
+        automático, eliminando 4 horas diárias de trabalho manual do time de TI.
+  \item Acelerei em mais de 15x as telas mais acessadas do ERP, de $\sim$7 s para menos de 400 ms,
+        otimizando consultas e índices no PostgreSQL.
+  \item Reduzi a emissão de relatórios operacionais de $\sim$30 min para menos de 5 s com geração
+        dinâmica de PDF.
+\end{cvitems}
+\cvstack{Stack}{Java, Spring Boot, Angular, TypeScript, JPA Hibernate, PostgreSQL}
+
+\vspace{7pt}
+\cvheading{SOC - Software de Saúde e Segurança do Trabalho}{Estágio em Suporte}{Out 2023 - Jun 2024}
+\begin{cvitems}
+  \item Prestei suporte técnico por chat e telefone aos usuários, com registro e escalonamento de chamados.
+\end{cvitems}
+
+\cvsection{Projetos}
+\textbf{RPGForge AI}\hfill\href{https://rpgforge-ai.vercel.app}{rpgforge-ai.vercel.app}\par
+\begin{cvitems}
+  \item Plataforma de fichas de RPG com IA, com geração ancorada por RAG em pgvector, saída
+        validada por schema Zod, motor de regras próprio, controle de custo por token e 271
+        testes automatizados.
+\end{cvitems}
+\cvstack{Tecnologias}{TypeScript, Next.js, NestJS, Prisma, PostgreSQL, pgvector, OpenAI, Docker}
+
+\cvsection{Habilidades}
+\textbf{Linguagens:} TypeScript, JavaScript, Java, Python, SQL\par
+\textbf{Backend:} Node.js, NestJS, Spring Boot, FastAPI, REST, WebSocket, Microsserviços\par
+\textbf{Frontend:} React, Next.js, Angular, Tailwind CSS\par
+\textbf{Dados e Cloud:} PostgreSQL, MongoDB, MySQL, AWS (Lambda, API Gateway, S3, RDS, ECS, CloudWatch), Docker\par
+\textbf{IA:} OpenAI API, RAG, pgvector, Embeddings, Structured Outputs\par
+
+\cvsection{Formação e Idiomas}
+\textbf{Universidade Católica de Santos}, Ciência da Computação\hfill Jan 2021 - Jun 2025\par
+\textbf{Cambridge Assessment English}, Certificado de Inglês CEFR B1\par
+
+\end{document}

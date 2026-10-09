@@ -38,3 +38,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local CV drafts (only the published one lives in public/cv)
+/*.pdf
+
+# local tooling: agent skills and settings, design-tool state, CV compiler cache
+/.claude/
+/.impeccable/
+/.cvtools/
